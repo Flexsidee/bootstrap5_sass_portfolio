@@ -1,10 +1,11 @@
 @use'../custom'as *;
-@use'../components/mixins' as *;
+@use'../components/mixins'as *;
 
-.btn-rounded{
-    @include media-breakpoint-down(sm){
+.btn-rounded {
+    @include media-breakpoint-down(sm) {
         display: none;
     }
+
     position: relative;
     padding: 0.65rem 4.375rem 0.65rem 1.25rem;
     font-weight: 700;
@@ -12,7 +13,7 @@
     border: 0.1rem solid rgba($white, 0.6);
     background-color: $white;
 
-    span{
+    span {
         position: absolute;
         background-color: $primary;
         width: 2.3rem;
@@ -22,20 +23,21 @@
         transform: translateY(-50%);
         border-radius: 50%;
 
-        i{
+        i {
             color: $white;
             font-size: 1rem;
             line-height: 2.3rem;
         }
     }
 
-    &:hover{
+    &:hover {
         @include gradient;
         color: $white;
 
-        span{
+        span {
             background-color: white;
-            i{
+
+            i {
                 color: $primary;
                 font-size: 1rem;
                 line-height: 2.3rem;
