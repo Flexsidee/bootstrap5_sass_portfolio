@@ -11112,5 +11112,64 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-rounded {
+  position: relative;
+  padding: 0.65rem 4.375rem 0.65rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .btn-rounded {
+    display: none;
+  }
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #9926f8;
+  width: 2.3rem;
+  height: 2.3rem;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.3rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, rgba(153, 38, 248, 0.95), rgba(209, 34, 227, 0.95));
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: white;
+}
+.btn-rounded:hover span i {
+  color: #9926f8;
+  font-size: 1rem;
+  line-height: 2.3rem;
+}
+
+.menu {
+  background: linear-gradient(to right, rgba(153, 38, 248, 0.95), rgba(209, 34, 227, 0.95));
+}
+.menu .name-logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu .name-logo a {
+  color: white;
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=style.css.map */
