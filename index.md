@@ -1,37 +1,126 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/Flexsidee/bootstrap5_sass_portfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <!-- page css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-### Markdown
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-```markdown
-Syntax highlighted code block
+    <!-- GlighBox CSS -->
+    <link rel="stylesheet" href="assets/vendors/glight/css/glightbox.min.css">
 
-# Header 1
-## Header 2
-### Header 3
+    <title>Portfolio</title>
+</head>
 
-- Bulleted
-- List
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fiexed-top">
+        <div class="container">
+            <div class="name-logo"><a class="navbar-brand" href="#">Somade Daniel</a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="rounded-pill btn-rounded">+234 7019983346
+                            <span><i class="fas fa-phone-alt"></i></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends -->
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+    <!-- Intro section starts -->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row text-white align-items-center">
 
-[Link](url) and ![Image](src)
-```
+                <!-- Intro Text starts -->
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Hey!, I'm Daniel</span>
+                        <span class="display-2--description lh-base">I am a Software Devloper, specializing in Frontend
+                            Web Development.</span>
+                    </h1>
+                    <button class="rounded-pill btn-rounded">Get in Touch
+                        <span><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                </div>
+                <!-- Intro Text ends -->
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+                <!-- Intro media starts -->
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="assets/images/arts/intro-section-illustration.png" alt="Media Illustration"
+                            class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Intro media starts -->
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                d="M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,197.3C960,203,1056,149,1152,117.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Intro section ends -->
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Flexsidee/bootstrap5_sass_portfolio/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <!-- GlighBox Js -->
+    <script src="/assets/vendors/glight/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'assets/images/profile/mine.jpg',
+            'type': 'image'
+        });
+    </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
