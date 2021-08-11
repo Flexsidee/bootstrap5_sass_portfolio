@@ -56,8 +56,40 @@
             margin-left: 1rem;
 
             @include media-breakpoint-up(sm) {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
             }
         }
+    }
+}
+
+//style the company info content
+.company-list{
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li{
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+
+        a{
+            color: $white;
+            text-decoration: none;
+
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+//style the footer copyright content
+.footer-bottom{
+    background-color: $black;
+    font-size: 110%;
+
+    &__copyright{
+        color: $gray-600;
+        font-weight: 400;
     }
 }
