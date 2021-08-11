@@ -11432,14 +11432,6 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media (min-width: 992px) {
-  .portfolio-box .portfolio-info .caption {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-  }
-}
 .portfolio-box .portfolio-info .caption h4 {
   text-transform: uppercase;
   display: block;
@@ -11573,6 +11565,23 @@ textarea.form-control-lg {
 .footer-bottom__copyright {
   color: #6c757d;
   font-weight: 400;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
